@@ -5,5 +5,5 @@ end
 
 # re-define your #position_taken? method here, so that you can use it in the #valid_move? method above.
 def position_taken?(board, index)
-  return ("x".casecmp(board[index]) || "o".casecmp(board[index]))
+  return ("x".casecmp(board[index]) == 0 || "o".casecmp(board[index]) == 0)
 end
